@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Geografía</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div id="PantallaInicio" class="PantallaInicio">
+    <h1>¡SuperTrivia!</h1>
+    <div class="Inicio-Contenedor">
+      <img src="./pics/pexels-nastyasensei-335393.jpg" alt="Es un globo terraqueo">
+      <div class="Informacion">
+        <h2>Bienvenida</h2>
+        <input type="text" name="NombreJugador" id="NombreJugador" placeholder="Escribe aqui tu nombre">
+      </div>
+    </div>
+    <div id="botonJugar" class="ContenedorJugar">
+      <button class="Button">Jugar</button>
+    </div>
+  </div>
+
+  <div id="PantallaCategorias" class="PantallaCategorias">
+    <h2 id="saludoNombre">¡Hola Baby!</h2>
+
+    <div class="tarjetas">
+      <div id="tarjetaGeografia" class="tarjeta geografia">
+        <img src="./pics/pexels-nastyasensei-335393.jpg" alt="">
+        <p>Geografia</p>
+      </div>
+
+      <div id="tarjetaMusica" class="tarjeta musica">
+        <img src="./pics/musica.jpg" alt="">
+        <p>Musica</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="PreguntasGeo" class="PreguntasGeo">
+    <h2>Geografia</h2>
+    <form id="formularioGeo">
+      <p>¿Cuál es la capital de Irlanda?</p>
+        <input type="radio" id="dublin" name="capitalIrlanda" value="Dublin">
+        <label for="dublin">Dublin</label><br>
+
+        <input type="radio" id="bogota" name="capitalIrlanda" value="Bogota">
+        <label for="bogota">Bogotá</label><br>
+
+        <input type="radio" id="tokio" name="capitalIrlanda" value="Tokio">
+        <label for="tokio">Tokio</label>
+      <br>
+      <p>¿Cuál es el desierto mas grande del mundo?</p>
+      <input type="radio" id="sahara" name="desiertoMasGrande" value="sahara">
+      <label for="sahara">Desierto del Sahara</label><br>
+      <input type="radio" id="arabia" name="desiertoMasGrande" value="arabia">
+      <label for="arabia">Desierto de Arabia</label><br>
+      <input type="radio" id="chihuahua" name="desiertoMasGrande" value="chihuahua">
+      <label for="chihuahua">Desierto de Chihuahua</label><br>
+
+      <p>¿Cómo se llama la linea imaginaria que pasa por el centro del polo norte y del polo sur?</p>
+      <input type="radio" id="primerMeridiano" name="lineaImaginaria" value="primerMeridiano">
+      <label for="primerMeridiano">Primer Meridiano</label><br>
+      <input type="radio" id="ejeCentral" name="lineaImaginaria" value="ejeCentral">
+      <label for="ejeCentral">Eje central</label><br>
+      <input type="radio" id="primerEje" name="lineaImaginaria" value="primerEje">
+      <label for="primerEje">Primer eje</label><br>
+
+      <input type="submit" value="Responder">
+
+    </form>
+    <div class="final">
+      <p>Tu puntaje fue: <span id="puntaje"></span></p>
+      <button class="botonesReiniciar" id="reiniciarG">Reiniciar</button>
+    </div>
+  </div>
+  <div id="PreguntasMus" class="PreguntasMus">
+    <h2>Musica</h2>
+    <form id="formularioMus">
+      <p>¿Qué cantante ganó un Grammy como mejor artista nuevo en 1985?</p>
+        <input type="radio" id="CyndiLauper" name="Gramy" value="CyndiLauper">
+        <label for="CyndiLauper">Cyndi Lauper</label><br>
+
+        <input type="radio" id="lionelRich" name="Gramy" value="lionelRich">
+        <label for="lionelRich">Lionel Rich</label><br>
+
+        <input type="radio" id="michaelJacksoG" name="Gramy" value="michaelJacksoG">
+        <label for="michaelJacksoG">Michael Jackson</label>
+      <br>
+      <p>¿Qué cantante compuso Your rock is my world?</p>
+      <input type="radio" id="michaelJackson" name="yourRock" value="michaelJackson">
+      <label for="michaelJackson">Michael Jackson</label><br>
+      <input type="radio" id="philCollins" name="yourRock" value="philCollins">
+      <label for="philCollins">Phil Collins</label><br>
+      <input type="radio" id="bobDylan" name="yourRock" value="bobDylan">
+      <label for="bobDylan">Bob Dylan</label><br>
+
+      <p>¿En que año salió el álbum 30 de Adele?</p>
+      <input type="radio" id="2021" name="album" value="2021">
+      <label for="2021">2021</label><br>
+      <input type="radio" id="2010" name="album" value="2010">
+      <label for="2010">2010</label><br>
+      <input type="radio" id="2016" name="album" value="2016">
+      <label for="2016">2016</label><br>
+
+      <input type="submit" value="Responder">
+
+    </form>
+
+    <div class="final">
+      <p>Tu puntaje fue: <span id="puntajee"></span></p>
+      <button class="botonesReiniciar" id="reiniciarM">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
